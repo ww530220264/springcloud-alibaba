@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: springcloud-alibaba-user
+  cloud:
+    zookeeper:
+      discovery:
+        register: true
+      connect-string: 127.0.0.1:2181
+server:
+  port: 8111
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address: zookeeper://127.0.0.1:2181
