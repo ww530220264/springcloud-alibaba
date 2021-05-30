@@ -1,16 +1,18 @@
 package com.wangwei.springcloudalibaba.order.controller;
 
+import com.wangwei.api.order.IOrderService;
 import com.wangwei.api.user.IUserService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.rpc.RpcContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author wangwei@huixiangtech.cn
+ * @author 530220264@qq.com
  * @version 1.0
  * @className OrderController
  * @description TODO
@@ -22,7 +24,9 @@ public class OrderController {
 
     private static final Logger logger = LoggerFactory.getLogger(OrderController.class);
 
-    @DubboReference
+    @Autowired
+    private IOrderService orderService;
+    @DubboReference(check = false)
     private IUserService userService;
 
     @GetMapping("/checkUser")

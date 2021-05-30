@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 
 /**
- * @author wangwei@huixiangtech.cn
+ * @author 530220264@qq.com
  * @version 1.0
  * @className UserServiceImpl
  * @description TODO

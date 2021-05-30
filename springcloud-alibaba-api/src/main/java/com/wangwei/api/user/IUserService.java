@@ -1,7 +1,7 @@
 package com.wangwei.api.user;
 
 /**
- * @author wangwei@huixiangtech.cn
+ * @author 530220264@qq.com
  * @version 1.0
  * @className IUserService
  * @description TODO

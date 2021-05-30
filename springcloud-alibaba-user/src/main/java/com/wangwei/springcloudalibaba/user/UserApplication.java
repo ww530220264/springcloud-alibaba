@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author wangwei@huixiangtech.cn
+ * @author 530220264@qq.com
  * @version 1.0
  * @className UserApplication
  * @description TODO
