@@ -1,6 +1,9 @@
 spring:
   application:
     name: springcloud-alibaba-order
+  elasticsearch:
+    rest:
+      uris: http://docker:9200
   cloud:
     zookeeper:
       discovery:

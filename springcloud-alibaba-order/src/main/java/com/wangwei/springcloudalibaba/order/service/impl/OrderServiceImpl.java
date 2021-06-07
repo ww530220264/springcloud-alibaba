@@ -1,7 +1,10 @@
 package com.wangwei.springcloudalibaba.order.service.impl;
 
 import com.wangwei.api.order.IOrderService;
+import com.wangwei.springcloudalibaba.order.pojo.Order;
 import org.apache.dubbo.config.annotation.DubboService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 
 /**
  * @author 530220264@qq.com
@@ -13,9 +16,11 @@ import org.apache.dubbo.config.annotation.DubboService;
 @DubboService
 public class OrderServiceImpl implements IOrderService {
 
+    @Autowired
+    private ElasticsearchRestTemplate restClient;
+
     @Override
     public String saveOrder(){
-        System.err.println("saved order...");
         return "order saved...";
     }
 }

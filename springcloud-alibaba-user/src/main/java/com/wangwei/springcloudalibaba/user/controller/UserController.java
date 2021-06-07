@@ -20,9 +20,6 @@ public class UserController {
 
     @Autowired
     private IUserService userService;
-    @DubboReference
-    private IOrderService orderService;
-
     /**
      * @author 530220264@qq.com
      * @description TODO       
@@ -34,8 +31,6 @@ public class UserController {
      **/
     @RequestMapping("/login")
     public boolean login(String username, String password) {
-        String result = orderService.saveOrder();
-        System.err.println(result);
         return userService.login(username, password);
     }
 }
